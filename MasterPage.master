@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hotel Deluxe  A Hotel category Flat bootstrap Responsive  Website Template | Home :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Hotel Deluxe Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='/../fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script src="js/jquery.easydropdown.js"></script>
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+    new WOW().init();
+</script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+      <form runat="server">
+    
+        <div class="header">
+		   <div class="col-sm-8 header-left">
+					 <div class="logo">
+						<a href="index.aspx"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li class="active"><a href="index.html">Home</a></li>
+						    	<li><a href="rooms.html">Rooms</a></li>                               
+                                  <li><a href="signup.aspx">Signup</a></li>
+                                 <li><a href="contact.aspx">Contact</a></li>
+							    <li>&nbsp;</li>
+                                
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>	
+				     <!-- start search-->
+				      <div class="search-box">
+							<div id="sb-search" class="sb-search">
+							 
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+
+									<span class="sb-icon-search"> </span>
+							 
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+						    new UISearch(document.getElementById('sb-search'));
+						</script>
+						<!----//search-scripts---->						
+	    		    <div class="clearfix"></div>
+	    	    </div>
+            <div class="col-sm-4 header_right">
+	    		      <div id="loginContainer"><a href="#" id="loginButton"><img src="images/login.png"><span>Post PG</span></a>
+						    <div id="loginBox">                
+						        <div id="loginForm">
+						                <fieldset id="body">
+						                	<fieldset>
+						                          <label for="email">Email Address</label>
+						                        
+                                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+						                    </fieldset>
+						                    <fieldset>
+						                            <label for="password">Password</label>
+						                          <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+						                     </fieldset>
+						                  <%--  <input type="submit" id="login" value="Login">--%>
+                                         <asp:Button ID="btnlogin" runat="server" Text="Login" OnClick="btnlogin_Click1"/>
+						                	<%--<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>--%>
+						            	</fieldset>
+						                 <span><a href="">Forgot your password?</a></span> <br />
+                                    <span><a href="signup.aspx">New User ? Registration</a></span> 
+							      </div>
+				              </div>
+			             </div>
+		                 <div class="clearfix"></div>
+	                 </div>
+	                <div class="clearfix"></div>
+	            
+   </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+        <div class="footer">
+   	<div class="container">
+   	 
+	  <div class="footer_grids">
+	     <div class="footer-grid">
+			<h4>Site Links</h4>
+			<ul class="list1">
+				<li><a href="contact.html">Home</a></li>
+                 <li><a href="signup.aspx">Rooms</a></li>
+                <li><a href="pgdetails.aspx">Signup</a></li>
+				<li><a href="booking.aspx">Contact</a></li>
+			</ul>
+		  </div>
+		  
+		  <div class="footer-grid last_grid">
+			<h4>Follow Us</h4>
+			<ul class="footer_social wow fadeInLeft" data-wow-delay="0.4s">
+			  <li><a href=""> <i class="fb"> </i> </a></li>
+			  <li><a href=""><i class="tw"> </i> </a></li>
+			  <li><a href=""><i class="google"> </i> </a></li>
+			  <li><a href=""><i class="u_tube"> </i> </a></li>
+		 	</ul>
+		 	<div class="copy wow fadeInRight" data-wow-delay="0.4s">
+              <p> &copy; 2020 PG ROOMS All rights reserved</p>
+	        </div>
+		  </div>
+		  <div class="clearfix"> </div>
+	   </div>
+      </div>
+   </div>
+          </form>
+    
+</body>
+</html>
